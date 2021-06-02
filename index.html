@@ -24,7 +24,7 @@
               <input type="radio" name="questions" id="value-10" value="10" />
               <span class="best-score">
                 <span>Best Score</span>
-                <span class="best-score-value">0.0s</span>
+                <span class="best-score-value"></span>
               </span>
             </div>
             <!-- 25 Question radio input -->
@@ -33,7 +33,7 @@
               <input type="radio" name="questions" id="value-25" value="25" />
               <span class="best-score">
                 <span>Best Score</span>
-                <span class="best-score-value">0.0s</span>
+                <span class="best-score-value"></span>
               </span>
             </div>
             <!-- 50 Question radio input -->
@@ -42,7 +42,7 @@
               <input type="radio" name="questions" id="value-50" value="50" />
               <span class="best-score">
                 <span>Best Score</span>
-                <span class="best-score-value">0.0s</span>
+                <span class="best-score-value"></span>
               </span>
             </div>
 
@@ -52,7 +52,7 @@
               <input type="radio" name="questions" id="value-99" value="99" />
               <span class="best-score">
                 <span>Best Score</span>
-                <span class="best-score-value">0.0s</span>
+                <span class="best-score-value"></span>
               </span>
             </div>
           </div>
@@ -74,8 +74,8 @@
         <div class="item-container"></div>
         <!-- Right / Wrong buttons -->
         <div class="item-footer">
-          <button class="wrong">Wrong</button>
-          <button class="right">Right</button>
+          <button class="wrong" onclick="select(false)">Wrong</button>
+          <button class="right" onclick="select(true)">Right</button>
         </div>
       </div>
 
@@ -84,13 +84,15 @@
         <!-- Score container -->
         <div class="score-container">
           <h1 class="title">Your Time</h1>
-          <h1 class="final-time">3.45s</h1>
-          <h1 class="base-time">Base Time : 2.4s</h1>
-          <h1 class="penalty-time">Penalty : +1.0s</h1>
+          <h1 class="final-time"></h1>
+          <h1 class="base-time"></h1>
+          <h1 class="penalty-time"></h1>
         </div>
         <!-- Play Again button -->
         <div class="score-footer">
-          <button class="play-again">Play Again</button>
+          <button class="play-again" onclick="playAgain()" hidden>
+            Play Again
+          </button>
         </div>
       </div>
     </div>
